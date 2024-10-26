@@ -3,28 +3,186 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Breast Cancer Awareness</title>
+    <title>Breast Cancer Awareness & Education</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.0/ScrollTrigger.min.js"></script>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Breast Cancer Awareness</h1>
-        <p>Join the fight against breast cancer. Awareness is the first step.</p>
-    </header>
-    
-    <main>
-        <section id="info">
-            <h2>Know the Facts</h2>
-            <p>Breast cancer affects millions of people worldwide. Early detection can save lives. Learn the signs and symptoms, and support those in need.</p>
-        </section>
-        
-        <section id="cta">
-            <button id="learnMoreBtn">Learn More</button>
-        </section>
-    </main>
-    
+    <nav class="navbar">
+        <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#symptoms">Symptoms</a>
+            <a href="#prevention">Prevention</a>
+            <a href="#support">Support</a>
+            <a href="#facts">Mind-Blowing Facts</a>
+            <a href="#myths">Myths</a>
+            <a href="#did-you-know">Did You Know?</a>
+        </div>
+    </nav>
+
+    <section class="hero" id="home">
+        <div class="floating-ribbons" id="ribbons"></div>
+        <div class="hero-content">
+            <h1>Together Against Breast Cancer</h1>
+            <p>Join us in the fight against breast cancer. Early detection saves lives. Learn about prevention, support, and treatment options.</p>
+            <button class="cta-button">Get Involved Today</button>
+        </div>
+    </section>
+
+    <div class="stats-container">
+        <div class="stat-box">
+            <div class="stat-number" data-target="1">0</div>
+            <div class="stat-label">in 8 women will develop breast cancer in their lifetime</div>
+        </div>
+        <div class="stat-box">
+            <div class="stat-number" data-target="90">0</div>
+            <div class="stat-label">% survival rate when detected early</div>
+        </div>
+        <div class="stat-box">
+            <div class="stat-number" data-target="3">0</div>
+            <div class="stat-label">million breast cancer survivors in the US</div>
+        </div>
+    </div>
+
+    <section class="section" id="about">
+        <div class="container">
+            <div class="info-grid">
+                <div class="info-card">
+                    <h3>What is Breast Cancer?</h3>
+                    <p>Breast cancer occurs when cells in the breast grow out of control. These cells usually form a tumor that can often be seen on an x-ray or felt as a lump. The tumor is malignant (cancerous) if the cells can grow into surrounding tissues or spread to distant areas of the body.</p>
+                </div>
+                <div class="info-card">
+                    <h3>Early Detection</h3>
+                    <p>Early detection of breast cancer is crucial for successful treatment. Regular screenings, including mammograms and clinical breast exams, can help detect cancer in its early stages when it's most treatable. Women aged 40 and older should have mammograms every 1-2 years.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="symptoms">
+        <div class="container">
+            <div class="info-card">
+                <h3>Common Signs and Symptoms</h3>
+                <img src="https://i0.wp.com/images-prod.healthline.com/hlcmsresource/images/topic_centers/2019-4/Breat_Cancer-.jpg?w=1155" alt="Breast Cancer Symptoms" class="symptoms-image">
+                <ul class="symptoms-list">
+                    <li>New lump in the breast or underarm</li>
+                    <li>Thickening or swelling of part of the breast</li>
+                    <li>Irritation or dimpling of breast skin</li>
+                    <li>Redness or flaky skin in the nipple area</li>
+                    <li>Pulling in of the nipple</li>
+                    <li>Nipple discharge other than breast milk</li>
+                    <li>Any change in the size or shape of the breast</li>
+                    <li>Pain in any area of the breast</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="prevention">
+        <div class="container">
+            <div class="info-grid">
+                <div class="info-card">
+                    <h3>Risk Reduction</h3>
+                    <p>While some risk factors cannot be changed, lifestyle choices can help reduce breast cancer risk:</p>
+                    <ul class="symptoms-list">
+                        <li>Maintain a healthy weight</li>
+                        <li>Exercise regularly</li>
+                        <li>Limit alcohol consumption</li>
+                        <li>Eat a balanced diet</li>
+                        <li>Breastfeed if possible</li>
+                    </ul>
+                </div>
+                <div class="info-card">
+                    <h3>Screening Guidelines</h3>
+                    <p>Regular screening is key to early detection. Recommended screenings include:</p>
+                    <ul class="symptoms-list">
+                        <li>Monthly breast self-exams</li>
+                        <li>Clinical breast exams every 3 years (ages 20-39)</li>
+                        <li>Annual mammograms (ages 40+)</li>
+                        <li>Additional screening for high-risk individuals</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="support">
+        <div class="container">
+            <div class="info-card">
+                <h3>Support Services</h3>
+                <div class="resources-grid">
+                    <div class="resource-card">
+                        <h4>Patient Support Groups</h4>
+                        <p>Connect with others who understand your journey. Share experiences and find strength in community.</p>
+                    </div>
+                    <div class="resource-card">
+                        <h4>Financial Assistance</h4>
+                        <p>Information about programs and resources to help with treatment costs and related expenses.</p>
+                    </div>
+                    <div class="resource-card">
+                        <h4>Counseling Services</h4>
+                        <p>Professional support for patients and families dealing with emotional and psychological challenges.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="facts">
+        <div class="container">
+            <h3>Mind-Blowing Facts</h3>
+            <ul class="facts-list">
+                <li>Over 2 million new cases of breast cancer are diagnosed worldwide each year.</li>
+                <li>Men can also get breast cancer, although it's much less common.</li>
+                <li>Breast cancer is the leading cause of cancer death in women globally.</li>
+                <li>There are over 3.5 million breast cancer survivors in the United States.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="section" id="myths">
+        <div class="container">
+            <h3>Myths About Breast Cancer</h3>
+            <ul class="myths-list">
+                <li>Myth: Wearing a bra causes breast cancer.</li>
+                <li>Myth: Only women with a family history of breast cancer are at risk.</li>
+                <li>Myth: Breast cancer only affects older women.</li>
+                <li>Myth: A lump is the only sign of breast cancer.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="section" id="did-you-know">
+        <div class="container">
+            <h3>Did You Know?</h3>
+            <p>Breast cancer is not a single disease; it can be classified into various types based on specific characteristics of the cancer cells.</p>
+            <p>Additionally, advances in research and treatment have significantly improved survival rates and quality of life for breast cancer patients.</p>
+        </div>
+    </section>
+
+    <section class="section" id="donation">
+        <div class="container">
+            <h3>Support the Cause: Make a Donation</h3>
+            <p>Your contributions play a vital role in funding research, providing support services, and raising awareness about breast cancer. Every donation, no matter how small, can make a significant difference in the lives of those affected by breast cancer.</p>
+            <p>By donating, you help empower patients, fund essential research for better treatments, and support educational initiatives that can save lives through early detection and prevention.</p>
+            <div class="donation-methods">
+                <div class="donation-option">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/GTBank_logo.svg/1200px-GTBank_logo.svg.png" alt="GTBank Logo" class="donation-logo">
+                    <p>Account Number: <strong>2032202001590</strong></p>
+                </div>
+                <div class="donation-option">
+                    <img src="https://www.finextra.com/finextra-images/top_pics/xl/81c5cb874171f3560810f9dc12ecdc5e8f85193d.png" alt="Wave Mobile Money Logo" class="donation-logo">
+                    <p>Phone Number: <strong>+220 3709558</strong></p>
+                </div>
+            </div>
+            <p>Thank you for your generosity and commitment to fighting breast cancer. Together, we can make a difference!</p>
+        </div>
+    </section>
+
     <footer>
-        <p>&copy; 2024 Breast Cancer Awareness</p>
+        <p>Raising awareness about breast cancer.</p>
     </footer>
 
     <script src="script.js"></script>

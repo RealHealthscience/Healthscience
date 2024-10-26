@@ -39,6 +39,14 @@ body {
     color: #fff;
 }
 
+.hero-image {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
 .hero {
     background: url('https://images.unsplash.com/photo-1602238121857-540d64e8af28?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMTc0M3wwfDF8c2VhcmNofDN8fGdyYXltZW50fGVufDB8fHx8MTYyNTg3MDU3Mw&ixlib=rb-1.2.1&q=80&w=1080') center/cover no-repeat;
     height: 60vh;

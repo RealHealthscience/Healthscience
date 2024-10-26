@@ -1,59 +1,104 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 body {
     font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
     color: #333;
-    background-color: #f7f2f2;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+}
+
+.navbar {
+    background-color: #f8f9fa;
+    padding: 1rem;
     text-align: center;
 }
 
-header {
-    background-color: #ff66b2;
+.nav-links a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #007bff;
+}
+
+.hero {
+    background: url('https://images.unsplash.com/photo-1602238121857-540d64e8af28?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMTc0M3wwfDF8c2VhcmNofDN8fGdyYXltZW50fGVufDB8fHx8MTYyNTg3MDU3Mw&ixlib=rb-1.2.1&q=80&w=1080') center/cover no-repeat;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     color: white;
-    padding: 20px;
-    width: 100%;
+    text-align: center;
 }
 
-header h1 {
-    font-size: 2.5em;
-}
-
-header p {
-    font-size: 1.2em;
-}
-
-main {
-    padding: 20px;
-    width: 80%;
-}
-
-#info {
-    margin-bottom: 20px;
-}
-
-#cta button {
-    padding: 10px 20px;
-    font-size: 1em;
-    background-color: #ff66b2;
+.cta-button {
+    background-color: #007bff;
     color: white;
     border: none;
-    border-radius: 5px;
+    padding: 10px 20px;
     cursor: pointer;
+    font-size: 1.2rem;
 }
 
-#cta button:hover {
-    background-color: #e055a1;
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.section {
+    padding: 40px 0;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.info-grid {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.info-card {
+    flex: 1;
+    padding: 20px;
+    margin: 0 10px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+}
+
+.stats-container {
+    display: flex;
+    justify-content: space-around;
+    margin: 40px 0;
+}
+
+.stat-box {
+    text-align: center;
+}
+
+.stat-number {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.symptoms-image {
+    max-width: 100%;
+    height: auto;
+}
+
+.donation-methods {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.donation-option {
+    text-align: center;
+}
+
+.donation-logo {
+    width: 100px;
+    height: auto;
 }
 
 footer {
-    margin-top: 20px;
-    font-size: 0.9em;
-    color: #666;
+    text-align: center;
+    padding: 20px 0;
+    background-color: #f8f9fa;
 }

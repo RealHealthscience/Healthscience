@@ -26,15 +26,7 @@ body {
     justify-content: center;
     color: white;
     text-align: center;
-}
 
-.cta-button {
-    background-color: #007bff;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    font-size: 1.2rem;
 }
 
 .container {

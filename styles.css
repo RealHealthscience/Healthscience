@@ -6,16 +6,37 @@ body {
     color: #333;
 }
 
+/* Navigation Bar */
 .navbar {
-    background-color: #f8f9fa;
-    padding: 1rem;
-    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 1rem 2rem;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
 }
 
 .nav-links a {
-    margin: 0 15px;
+    color: #fff;
     text-decoration: none;
-    color: #007bff;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    transition: background-color 0.3s, color 0.3s;
+    border-radius: 5px;
+}
+
+.nav-links a:hover {
+    background-color: #ff4081;
+    color: #fff;
 }
 
 .hero {

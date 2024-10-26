@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
             if (count < target) {
                 stat.innerText = Math.ceil(count + increment); // Update count
-                setTimeout(updateCount, 1); // Continue updating
+                setTimeout(updateCount, 10); // Reduced frequency for better smoothness
             } else {
                 stat.innerText = target; // Ensure it reaches target
             }
